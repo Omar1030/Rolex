@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolex</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+
+    <!-- ========== Start Navbar ========== -->
+    <nav class="navbar position-fixed w-100 py-4 z-3">
+        <div class="overlay position-fixed top-0 end-0 bg-white">
+            <div class="closeBtn fs-4 position-absolute"><i class="fa-solid fa-x"></i></div>
+            <ul class="menuList list-unstyled position-absolute start-50 text-center">
+                <li class="active" data-section="home">Home</li>
+                <li data-section="featured">Featured</li=>
+                <li data-section="products">Products</li>
+                <li data-section="new">New</li>
+            </ul>
+        </div>
+        <div class="my-cart">
+            <div class="closeBtn fs-4"><i class="fa-solid fa-x"></i></div>
+            <h2>My Cart</h2>
+            <ul class="cart-list"></ul>
+        </div>
+        <div class="container-fluid container-lg d-flex align-items-center px-4 px-lg-5">
+            <ul class="main-items list-unstyled d-flex m-0">
+                <li class="me-5"><i class="fa-regular fa-clock me-2"></i>Rolex</li>
+                <li class="me-4 active d-none d-md-block" data-section="home">Home</li>
+                <li class="me-4 d-none d-md-block" data-section="featured">Featured</li>
+                <li class="me-4 d-none d-md-block" data-section="products">Products</li>
+                <li class="d-none d-md-block" data-section="new">New</li>
+            </ul>
+            <ul class="more-data list-unstyled d-flex m-0">
+                <li><i class="fa-regular fa-moon"></i></li>
+                <li class="mx-3"><i class="fa-solid fa-cart-shopping"></i></li>
+                <li class="d-block d-md-none"><i class="fa-solid fa-bars"></i></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ========== End Navbar ========== -->
+    
+    <!-- ========== Start Landing ========== -->
+    <section class="landing" id="home">
+        <div class="container-fluid container-lg">
+            <div class="row gap-md-2">
+                <div class="social col-6 col-md-1">
+                    <ul class="list-unstyled">
+                        <li class="text-center">Instgarm</li>
+                        <li class="text-center">Twitter</li>
+                        <li class="text-center">Facebook</li>
+                    </ul>
+                </div>
+                <div class="home-text col-12 col-md-5 me-0 m-md-4 order-3 order-md-2">
+                    <h1 class="d-flex flex-column m-0 mb-3">
+                        <span>NEW WATCH</span>
+                        <span>COLLECTIONS B720</span>
+                    </h1>
+                    <p>
+                        Latest arrival of the new imported 
+                        watches of the B720 series, 
+                        with a modern and resistant design.
+                    </p>
+                    <span class="price d-block mb-5">$1245</span>
+                    <div class="btns d-flex align-items-center">
+                        <button class="add-to-cart-btn border border-0">Discover</button>
+                        <button class="add-to-cart-btn border border-0 text-white">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="home-img col-6 col-md-5 order-2 order-md-3 d-flex align-items-center justify-content-center">
+                    <img src="img/home.png" alt="home-img" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="up position-fixed d-flex align-items-center justify-content-center"><i class="fa-solid fa-arrow-up fs-4"></i></div>
+    </section>
+    <!-- ========== End Landing ========== -->
+
+    <!-- ========== Start Featured ========== -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <h3 class="head-section text-center position-relative pt-3 pb-5">FEATURED</h3>
+            <div class="featured-items">
+                <div class="row justify-content-lg-center row-gap-4">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="product-box position-relative d-flex flex-column align-items-center justify-content-center">
+                            <img src="img/featured1.png" alt="featured-img-one" class="img-fluid">
+                            <span class="mt-3 mb-1">JAZZMASTER</span>
+                            <span class="mb-1">$1050</span>
+                            <button class="add-to-cart-btn border border-0 text-white">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="product-box position-relative d-flex flex-column align-items-center justify-content-center">
+                            <img src="img/featured2.png" alt="featured-img-one" class="img-fluid">
+                            <span class="mt-3 mb-1">INGERSOLL</span>
+                            <span class="mb-1">$250</span>
+                            <button class="add-to-cart-btn border border-0 text-white">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="product-box position-relative d-flex flex-column align-items-center justify-content-center">
+                            <img src="img/featured3.png" alt="featured-img-one" class="img-fluid">
+                            <span class="mt-3 mb-1">ROSE GOLD</span>
+                            <span class="mb-1">$890</span>
+                            <button class="add-to-cart-btn border border-0 text-white">ADD TO CART</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="story px-4 px-md-0 d-flex flex-column flex-md-row align-items-md-center justify-content-evenly">
+            <div class="story-img position-relative order-2 order-md-1">
+                <img src="img/story.png" alt="" class="position-absolute w-100 h-100">
+            </div>
+            <div class="story-data mb-5 mb-md-0 order-1 order-md-2">
+                <h2 class="head-secion position-relative pt-3 mx-auto mx-md-0">OUR STORY</h2>
+                <h3 class="d-flex flex-column">
+                    <span>Inspirational Watch of</span>
+                    <span>this year</span>
+                </h3>
+                <p>
+                    The latest and modern watches of this year, 
+                    is available in various presentations in this store, 
+                    discover them now.
+                </p>
+                <button class="add-to-cart-btn border border-0 text-white">ADD TO CART</button>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Featured ========== -->
+
+    <!-- ========== Start Products ========== -->
+    <section class="products" id="products">
+        <div class="container">
+            <h3 class="head-section text-center position-relative pt-3 pb-5">PRODUCTS</h3>
+            <div class="products-items justify-content-center">
+                <div class="product-box" data-name="SPIRIT ROSE" data-price="$1500" data-img="img/product1.png">
+                    <img src="img/product1.png" alt="featured-img-one" class="img-fluid">
+                    <span class="name mt-3 mb-1">SPIRIT ROSE</span>
+                    <span class="price">$1500</span>
+                    <button class="btn-add border border-0 bg-black text-white position-absolute bottom-0 end-0">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+                <div class="product-box" data-name="KHAKI PILOT" data-price="$1350" data-img="img/product2.png">
+                    <img src="img/product2.png" alt="featured-img-one" class="img-fluid">
+                    <span class="name mt-3 mb-1">KHAKI PILOT</span>
+                    <span class="price">$1350</span>
+                    <button class="btn-add border border-0 bg-black text-white position-absolute bottom-0 end-0">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+                <div class="product-box" data-name="JUBILEE BLACK" data-price="$870" data-img="img/product3.png">
+                    <img src="img/product3.png" alt="featured-img-one" class="img-fluid">
+                    <span class="name mt-3 mb-1">JUBILEE BLACK</span>
+                    <span class="price">$870</span>
+                    <button class="btn-add border border-0 bg-black text-white position-absolute bottom-0 end-0">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+                <div class="product-box" data-name="FOSIL ME3" data-price="$650" data-img="img/product4.png">
+                    <img src="img/product4.png" alt="featured-img-one" class="img-fluid">
+                    <span class="name mt-3 mb-1">FOSIL ME3</span>
+                    <span class="price">$650</span>
+                    <button class="btn-add border border-0 bg-black text-white position-absolute bottom-0 end-0">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+                <div class="product-box" data-name="DUCHEN" data-price="$950" data-img="img/product5.png">
+                    <img src="img/product5.png" alt="featured-img-one" class="img-fluid">
+                    <span class="name mt-3 mb-1">DUCHEN</span>
+                    <span class="price">$950</span>
+                    <button class="btn-add border border-0 bg-black text-white position-absolute bottom-0 end-0">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>            
+            </div>
+        </div>
+        <div class="story px-4 px-md-0 d-flex flex-column flex-md-row align-items-md-center justify-content-evenly">
+            <div class="story-data mb-5 mb-md-0">
+                <div class="swiper product-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <span class="quote d-flex align-items-center justify-content-center bg-white"><i class="fa-solid fa-quote-left"></i></span>
+                            <p class="about-products mt-4 mb-3">
+                                They are the best watches that one acquires, also they are always with the latest 
+                                news and trends, with a very comfortable price and especially with the attention 
+                                you receive, they are always attentive to your questions.
+                            </p>
+                            <strong class="date">March 27.2022</strong>
+                            <div class="staff-info d-flex align-items-center mt-4">
+                                <div class="img me-3">
+                                    <img src="img/testimonial1.jpg" alt="">
+                                </div>
+                                <div class="name d-flex flex-column">
+                                    <span>Lee Doe</span>
+                                    <span>Directory of a company</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="quote d-flex align-items-center justify-content-center bg-white"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="about-products mt-4 mb-3">
+                                They are the best watches that one acquires, also they are always with the latest 
+                                news and trends, with a very comfortable price and especially with the attention 
+                                you receive, they are always attentive to your questions.
+                            </p>
+                            <strong class="date">March 27.2022</strong>
+                            <div class="staff-info d-flex align-items-center mt-4">
+                                <div class="img me-3">
+                                    <img src="img/testimonial2.jpg" alt="">
+                                </div>
+                                <div class="name d-flex flex-column">
+                                    <span>Samantha Mey</span>
+                                    <span>Directory of a company</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="quote d-flex align-items-center justify-content-center bg-white"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="about-products mt-4 mb-3">
+                                They are the best watches that one acquires, also they are always with the latest 
+                                news and trends, with a very comfortable price and especially with the attention 
+                                you receive, they are always attentive to your questions.
+                            </p>
+                            <strong class="date">March 27.2022</strong>
+                            <div class="staff-info d-flex align-items-center mt-4">
+                                <div class="img me-3">
+                                    <img src="img/testimonial3.jpg" alt="">
+                                </div>
+                                <div class="name d-flex flex-column">
+                                    <span>Raul Zaman</span>
+                                    <span>Directory of a company</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="story-img position-relative">
+                <img src="img/testimonial.png" alt="" class="position-absolute w-100 h-100">
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Products ========== -->
+
+    <!-- ========== Start New ========== -->
+    <section class="new" id="new">
+        <div class="container">
+            <h3 class="head-section text-center position-relative pt-3 pb-5">NEW ARRIVALS</h3>
+            <!-- Swiper -->
+            <div class="swiper new-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product-box position-relative d-flex flex-column align-items-center justify-content-center">
+                            <img src="img/new1.png" alt="featured-img-one" class="img-fluid">
+                            <span class="mt-3 mb-1">INGERSOLL</span>
+                            <span class="mb-1">$1050</span>
+                            <button class="add-to-cart-btn border border-0 text-white">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-box position-relative d-flex flex-column align-items-center justify-content-center">
+                            <img src="img/new4.png" alt="featured-img-one" class="img-fluid">
+                            <span class="mt-3 mb-1">JAZZMASTER</span>
+                            <span class="mb-1">$2000</span>
+                            <button class="add-to-cart-btn border border-0 text-white">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-box position-relative d-flex flex-column align-items-center justify-content-center">
+                            <img src="img/new3.png" alt="featured-img-one" class="img-fluid">
+                            <span class="mt-3 mb-1">ROSE GOLD</span>
+                            <span class="mb-1">$750</span>
+                            <button class="add-to-cart-btn border border-0 text-white">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-box position-relative d-flex flex-column align-items-center justify-content-center">
+                            <img src="img/new2.png" alt="featured-img-one" class="img-fluid">
+                            <span class="mt-3 mb-1">KHAKI PILOT</span>
+                            <span class="mb-1">$830</span>
+                            <button class="add-to-cart-btn border border-0 text-white">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-box position-relative d-flex flex-column align-items-center justify-content-center">
+                            <img src="img/new1.png" alt="featured-img-one" class="img-fluid">
+                            <span class="mt-3 mb-1">JUBILEE BLACK</span>
+                            <span class="mb-1">$699</span>
+                            <button class="add-to-cart-btn border border-0 text-white">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-box position-relative d-flex flex-column align-items-center justify-content-center">
+                            <img src="img/new3.png" alt="featured-img-one" class="img-fluid">
+                            <span class="mt-3 mb-1">FOSIL ME3</span>
+                            <span class="mb-1">$890</span>
+                            <button class="add-to-cart-btn border border-0 text-white">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-box position-relative d-flex flex-column align-items-center justify-content-center">
+                            <img src="img/new2.png" alt="featured-img-one" class="img-fluid">
+                            <span class="mt-3 mb-1">DUCHEN</span>
+                            <span class="mb-1">$1100</span>
+                            <button class="add-to-cart-btn border border-0 text-white">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End New ========== -->
+
+    <!-- ========== Start Subscribe ========== -->
+    <div class="subscribe">
+        <div class="container-hub">
+            <div class="row align-items-center flex-column flex-md-row row-gap-2">
+                <div class="sub-txt col-12 col-md-5">
+                    <h1 class="mx-auto mx-md-0 text-center text-md-start">Subscribe Our Newsletter</h1>
+                    <p  class="text-center text-md-start">
+                        Don't miss out on your discounts. 
+                        Subscribe to our email newsletter to get the best offers, 
+                        discounts, coupons, gifts and much more.
+                    </p>
+                </div>
+                <div class="col-12 col-md-1"></div>
+                <div class="sub-input col-12 col-md-6 d-flex flex-column flex-md-row row-gap-2">
+                    <input type="text" placeholder="Enter your email" class="border border-0">
+                    <input type="submit" class="border border-0 text-white">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========== End Subscribe ========== -->
+    
+    <!-- ========== Start Footer ========== -->
+    <div class="footer">
+        <div class="container">
+            <div class="row row-gap-5">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h3 class="mb-3">Our information</h3>
+                    <ul class="list-unstyled">
+                        <li>1234 - Peru</li>
+                        <li class="my-1">La Libertad 43210</li>
+                        <li>123-456-789</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h3 class="mb-3">About Us</h3>
+                    <ul class="list-unstyled">
+                        <li>Support Center</li>
+                        <li class="my-1">Customer Support</li>
+                        <li class="mb-1">bout Us</li>
+                        <li>Copy Right</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h3 class="mb-3">Product</h3>
+                    <ul class="list-unstyled">
+                        <li>Road bikes</li>
+                        <li class="my-1">Mountain bikes</li>
+                        <li class="mb-1">Elctric</li>
+                        <li>Accessories</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h3 class="mb-3">Social</h3>
+                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li class="mx-4"><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom mt-3">
+            <div class="text-center">Designed by <span class="fw-medium">Bedimcode</span></div>
+            <div class="text-center">Coded by <span class="fw-medium">Omar Abdelmoaty</span></div>
+        </div>
+    </div>
+    <!-- ========== End Footer ========== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+    
+</body>
+</html>
